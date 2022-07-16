@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MyTableComponent } from './widgets/my-table/my-table.component';
+import { MyTableComponent } from './widgets/my-table/my-table.component'; 
+import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './pages/users/users.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +14,8 @@ import { UsersComponent } from './pages/users/users.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
