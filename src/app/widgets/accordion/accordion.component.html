@@ -1,0 +1,19 @@
+<div class="card mt-2">
+    <div class="card-header text-white" [class]="accordionColor">
+        <div class="row">
+            <div class="col-6">
+                {{headerText}}
+            </div>
+            <div class="col-6 text-end">
+                <i *ngIf="isAccordionOpen" class="fa fa-angle-down" (click)="isAccordionOpen = false" aria-hidden="true" ></i>
+                <i *ngIf="!isAccordionOpen" class="fa fa-angle-up" (click)="isAccordionOpen = true" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="card-body" *ngIf="isAccordionOpen">
+        <ng-container >
+            <ng-content></ng-content>
+        </ng-container>
+        
+    </div>
+</div>

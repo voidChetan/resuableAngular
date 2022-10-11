@@ -28,6 +28,7 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/fontawesome-4.7/css/font-awesome.min.css",
               "src/styles.css"
             ],
             "scripts": []

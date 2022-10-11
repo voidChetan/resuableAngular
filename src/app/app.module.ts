@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { MyTableComponent } from './widgets/my-table/my-table.component'; 
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './pages/users/users.component';
+import { AutoTextLengthDirective } from './directives/textarea/auto-text-length.directive';
+import { AccordionComponent } from './widgets/accordion/accordion.component';
+import { EmployeeComponent } from './pages/employee/employee.component';
 @NgModule({
   declarations: [
     AppComponent,
     MyTableComponent,
-    UsersComponent
+    UsersComponent,
+    AutoTextLengthDirective,
+    AccordionComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,

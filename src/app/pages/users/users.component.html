@@ -1,11 +1,17 @@
-<div class="row">
-    <div class="col-md-12 text-center p-2">
-        <h1 class="text-primary">Reusable Table Component</h1>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            Reusable Table Component
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                     <app-my-table [HeadArray]="headArray" [GridArray]="usersList"
+                     (onEdit)="editUser($event)"  (onDelete)="deleteUser($event)"></app-my-table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-12">
-         <app-my-table [HeadArray]="headArray" [GridArray]="usersList"
-         (onEdit)="editUser($event)"  (onDelete)="deleteUser($event)"></app-my-table>
-    </div>
-</div>
+
+ 
