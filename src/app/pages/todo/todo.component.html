@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row pt-3">
   <div class="col-md-3">
 
   </div>
@@ -10,13 +10,13 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-6">
-            <input type="text" placeholder="To do item" class="form-control" [(ngModel)]="todoObj.todoItem">
+            <input type="text" placeholder="Enter To do item" class="form-control" [(ngModel)]="todoObj.todoItem">
           </div>
           <div class="col-md-2">
            <input type="color" class="form-control" [(ngModel)]="todoObj.color">
           </div>
           <div class="col-md-2">
-            <button class="btn btn-primary btn-sm" (click)="onItemAdd()" >Add</button>
+            <button class="btn btn-primary btn-sm" (click)="onItemAdd()" >Add Item</button>
           </div>
         </div>
         <hr>
